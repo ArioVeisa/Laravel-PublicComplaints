@@ -53,7 +53,7 @@ class RolePermissionSeeder extends Seeder
     {
         foreach ($this->permissions as $key => $value) {
             foreach ($value as $permission) {
-                Permission::firsOrCreate([
+                Permission::firstOrCreate([
                     'name' => $key . '-' . $permission,
                 ]);
             }            
